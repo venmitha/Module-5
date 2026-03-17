@@ -11,24 +11,21 @@ To write a Python program that creates a **Student** class with a **default cons
 5. **Execute the Program**: Instantiate the `Student` class and call the `show` method.
 
 ## 🧾 Program
-```
-name = input("Enter the student's name: ")
 
-class Student:
-   
-    def __init__(self):
-        self.a = name  # assign user input to instance variable
-
-    def show(self):
-        print("This is a non-parameterized constructor")
-        print("Welcome,", self.a)
-
-s = Student()
-s.show()
-```
+    class Student:
+        def __init__(self,name):
+            self.a = name
+        def show(self):
+            print(f"Welcome {self.a}")
+    name = input("Enter the name of the student : ")
+    s = Student(name)
+    s.show()
 
 ## Output
-<img width="530" height="152" alt="image" src="https://github.com/user-attachments/assets/30e8d348-56b8-4693-8790-54c8904af1fd" />
+
+<img width="1918" height="527" alt="image" src="https://github.com/user-attachments/assets/ac9a2f45-8427-489e-a5c1-b0dfa4ed5590" />
+
 
 ## Result
-Thus , To write a Python program that creates a Student class with a default constructor and a method to display a welcome message along with the student’s name provided by the user.
+
+Thus, The Python program that creates a Student class with a default constructor and a method to display a welcome message along with the student’s name provided by the user was executed succesfully.
